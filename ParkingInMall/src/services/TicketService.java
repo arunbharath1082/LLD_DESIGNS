@@ -59,7 +59,7 @@ public class TicketService {
                 SpotAssignmentStrategyType.RANDOM,parkingLotRepository);
 
         ParkingSpot parkingSpot=spotAssignmentStrategy.assignSpot(gate,vehicleType);
-//ticket object
+
         Ticket ticket=new Ticket();
         ticket.setEntryTime(new Date());
         ticket.setNumber(String.valueOf(new Random().nextInt()));
